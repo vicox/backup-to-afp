@@ -1,3 +1,5 @@
+#!/bin/sh
+
 dir=$1
 afp_url=$2
 
