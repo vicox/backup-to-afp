@@ -1,4 +1,4 @@
-# Backup to AFP
+# backup-to-afp.sh
 
 `backup-to-afp.sh` is a bash script that backups a directory to an AFP share with rsync.
 
