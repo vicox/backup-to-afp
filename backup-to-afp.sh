@@ -36,6 +36,17 @@ else
   fi
 fi
 
-rsync -aP --delete --exclude=.DS_Store --exclude=.afpDeleted* $dir/ $mountpoint
+rsync -aP --delete --exclude=.DS_Store \
+  --exclude=.afpDeleted* \
+  --exclude=.DocumentRevisions-V100 \
+  --exclude=.Spotlight-V100 \
+  --exclude=.TemporaryItems \
+  --exclude=.fseventsd \
+  --exclude=.VolumeIcon.icns \
+  --exclude=.apdisk \
+  --exclude=.disk_label \
+  --exclude=.disk_label_2x \
+  --exclude=tmbootpicker.efi \
+  $dir/ $mountpoint
 
 umount $mountpoint
